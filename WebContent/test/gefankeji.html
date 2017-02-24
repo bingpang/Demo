@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>歌凡科技</title>
+    <meta name="gefankeji" content="歌凡科技">
+    <link rel="stylesheet" href="gefankeji.css">
+    <style type="text/css">
+    	.nav-a ul li:hover{
+			border-bottom:6px solid #00bfd9;
+		}
+		.defbtm{
+			border-bottom:6px solid #00bfd9;
+		}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-a">
+            <img src="image/logo.png" alt="">
+            <ul>
+                <li class="defbtm"><a href="javascript:void(0)" >首页</a></li>
+                <li><a href="javascript:void(0)">业务范围</a></li>
+                <li><a href="javascript:void(0)">案例展示</a></li>
+                <li><a href="javascript:void(0)">关于我们</a></li>
+                <li><a href="javascript:void(0)">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+<script src="js/auto-size.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript">
+	$(".nav-a ul li").click(function(){
+		$('.nav-a ul').find('li').each(function(e) {
+			$(this).removeClass('defbtm');
+		});
+		$(this).addClass('defbtm');
+	});
+</script>
+</html>

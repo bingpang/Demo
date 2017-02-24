@@ -1,0 +1,15 @@
+<map showCanvasBorder='1' canvasBorderColor='f1f1f1' canvasBorderThickness='2' borderColor='00324A' fillColor='F0FAFF'  hoverColor='C0D2F8' unescapeLinks='0'>
+	<data>
+<!-- 		<entity id='SC.CD' value='32' color='FF0000' toolText='1.123456\r\n2.1515351'  link="JavaScript:MapClick('CD');" /> -->
+<!-- 		<entity id='SC.MY' value='30' color='ffff00'  link="JavaScript:MapClick('MY');" /> -->
+<!-- 		<entity id='SC.DY' value='28' color='00ff00'  link="JavaScript:MapClick('DY');" /> -->
+<!-- 		<entity id='CN.AH' displayValue='安徽' toolText='安徽' color='FF0000' link="JavaScript:MapClick('安徽');"/> 	   -->
+<!-- 		<entity id='CN.BJ' displayValue='北京' toolText='北京' color='ffff00'  />           -->
+<!-- 		<entity id='CN.CQ' displayValue='重庆' toolText='重庆' color='00ff00'  /> 	   -->
+<!-- 		<entity id='CN.FJ' displayValue='福建' toolText='福建' color='FFFEFF'  /> 	  -->
+<!-- 		<entity id='CN.GS' displayValue='甘肃' toolText='甘肃' color='FFFFFF'  />   -->
+		<entity id='BJ.HR' value='14' displayValue='怀柔区' toolText='怀柔区' color='00ff23' /> 	     
+		
+		
+	</data>
+</map>

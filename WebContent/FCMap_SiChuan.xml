@@ -1,0 +1,7 @@
+<map showCanvasBorder='1' canvasBorderColor='f1f1f1' canvasBorderThickness='2' borderColor='00324A' fillColor='F0FAFF'  hoverColor='C0D2F8'>
+	<data>
+		<entity id='SC.CD' value='32' color='FF0000' toolText='1.123456\r\n2.1515351'  link="JavaScript:MapClick('CD');" />
+		<entity id='SC.MY' value='30' color='ffff00'  link="JavaScript:MapClick('MY');" />
+		<entity id='SC.DY' value='28' color='00ff00'  link="JavaScript:MapClick('DY');" />
+	</data>
+</map>

@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:  "Adobe 黑体 Std R";
+
+}
+.all{
+    width: 19.2rem;
+}
+a{
+    text-decoration:none
+}
+.nav-a{
+    width: 19.2rem;height: 1.32rem;
+    background-image: url("image/nav-a.jpg");
+    background-size: 19.2rem 1.32rem;
+}
+
+.nav-a img{
+    width: 2.46rem;
+    height: 0.78rem;
+    line-height:1.32rem;
+    border: solid 1px red;
+
+}
+.nav-a ul{
+    float: right;
+}
+.nav-a ul li{
+  list-style: none;
+    float: left;
+    font-size: 0.36rem;
+    /*color: white;*/
+    margin-left: 0.5rem;
+    margin-top: -1rem;
+    text-align: center;
+    height: 0.9rem;
+    width: 2.2rem;
+    padding-top: 0.4rem;
+    
+}
+
+
+.nav-a ul li a{
+    color: white;
+}
+.nav-a ul li a:hover{
+    color: aquamarine;
+}
+.nav-a ul li a :visited{
+     background-color: aquamarine;
+
+}

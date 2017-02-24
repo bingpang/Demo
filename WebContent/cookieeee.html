@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body onload="loadData();">
+
+	<input type="button" value="GET" onclick="GetVal();" />
+
+	<span id = "keleyivisitorip"></span>
+
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.cookie.js"></script>
+	<script type="text/javascript" src="web-storage-cache.js"></script>
+	<script type="text/javascript" src="http://tool.keleyi.com/ip/visitoriphost/"></script>
+	
+	<script type="text/javascript">
+	
+	var wsCache = new WebStorageCache();
+	wsCache.set('username', 'wqteam', {exp : 20});
+	
+	wsCache.set('password', '123456456', {exp : 100000});
+	
+	
+	//wsCache.clear();
+	 var storage = window.localStorage;
+
+	// alert(storage.getItem('username'));
+	 
+function setCookie(name, value, expires, path, domain, secure) {
+    document.cookie = name + "=" + escape(value) +
+    ((expires) ? "; expires=" + expires : "") +
+    ((path) ? "; path=" + path : "") +
+    ((domain) ? "; domain=" + domain : "") +
+    ((secure) ? "; secure" : "");
+}
+
+function getCookieVal(offset) {
+    var endstr = document.cookie.indexOf(";", offset);
+    if (endstr == -1) {
+        endstr = document.cookie.length;
+    }
+    return unescape(document.cookie.substring(offset, endstr));
+}
+ 
+// primary function to retrieve cookie by name
+function getCookie(name) {
+    var arg = name + "=";
+    var alen = arg.length;
+    var clen = document.cookie.length;
+    var i = 0;
+    while (i < clen) {
+        var j = i + alen;
+        if (document.cookie.substring(i, j) == arg) {
+            return getCookieVal(j);
+        }
+        i = document.cookie.indexOf(" ", i) + 1;
+        if (i == 0) break;
+    }
+    return null;
+}
+
+function loadData(){
+// 	for(var i = 0;i< 20  ; i++){
+// 		var obj = {
+// 				name:'梁剑伟'+i,
+// 				age:'10',
+// 				address:'成都'
+// 			}
+		
+// 		var objstr = JSON.stringify(obj);
+// 		$.cookie("ljw"+i, JSON.stringify(objstr), {
+// 			expires : null,
+// 			domain : null,
+// 			path : "/",
+// 			secure : null
+// 		});
+// 	}
+		//setCookie('ljw',objstr,null,null,null,null)
+}
+	function GetVal() {
+		
+		//getCookie('ljw');
+		var obj = $.cookie('ljw');
+		var obj2 = $.cookie('ljw2');
+		var aa = JSON.parse(obj);
+		alert(aa.name);
+	}
+</script>
+</body>
+</html>

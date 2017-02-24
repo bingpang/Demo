@@ -1,0 +1,28 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+		<title>My First chart using FusionCharts</title>
+		<script type="text/javascript" src="FusionCharts/Charts/FusionCharts.js"></script>
+		<script>
+			function MapClick(mid){
+				alert(mid);
+			}
+		</script>
+	
+	</head>
+	<body>
+		<div id="chartContainer">
+			FusionCharts will load here!
+		</div>
+		<div id="mychart1">
+			mychartl !!!!!
+		</div>
+		<script type="text/javascript">
+			var myChart = new FusionCharts("FCMap_Anhui.swf", "myChartId", "100%", "90%", "0", "1" );      
+			myChart.setXMLUrl("FCMap_Anhui.xml");      
+			myChart.render("chartContainer");
+// 			MapClick("Done");
+		</script>
+	</body>
+</html>
