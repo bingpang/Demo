@@ -19,7 +19,8 @@ public class Demo {
 		URLConnection conn = url.openConnection();
 		BufferedReader uf = new BufferedReader(new InputStreamReader(conn.getInputStream(),"UTF-8"));
 		String line = null;
-		String reg = "<a[^>]*href=(\"([^\"]*)\"|\'([^\']*)\'|([^\\s>]*))[^>]*>(.*?)</a>";
+//		String reg = "<a[^>]*href=(\"([^\"]*)\"|\'([^\']*)\'|([^\\s>]*))[^>]*>(.*?)</a>"; //a标签
+		String reg = "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$";
 		Pattern p = Pattern.compile(reg);
 		while ((line = uf.readLine()) != null) {
 			Matcher m = p.matcher(line);

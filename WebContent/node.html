@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	dsfasdf
+
+</body>
+<script type="text/javascript">
+	var http = require("http");
+	http.createServer(function (request, response) {
+
+		// 发送 HTTP 头部 
+		// HTTP 状态值: 200 : OK
+		// 内容类型: text/plain
+		response.writeHead(200, {'Content-Type': 'text/plain'});
+
+		// 发送响应数据 "Hello World"
+		response.end('Hello World\n');
+	}).listen(8888);
+</script>
+</html>
